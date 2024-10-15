@@ -1,0 +1,25 @@
+Quick first setup
+----------
+Login to https://192.168.1.99
+Login: admin
+Pass: (blank)
+----------
+Network -> Interfaces -> LAN1
+Change IP from 192.168.1.99 to 192.168.X.99 - where X is your network
+----------
+Network -> Static Routes
+Add Gateway: 192.168.0.1
+----------
+Network -> DNS
+Change to Specify: 194.204.152.34 and 194.204.159.1, deselect UDP, deselect TLS
+----------
+System -> Settings
+Change time zone
+----------
+System -> Firmware
+https://docs.fortinet.com/upgrade-tool/fortigate
+Example: from 7.2.6 F to 7.2.8 M to 7.2.10 M
+Backup config and upgrade
+----------
+Policy&Objects -> Firewall Policy
+Turn on Logs in Implicit Deny
