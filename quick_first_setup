@@ -14,7 +14,10 @@ Network -> DNS
 Change to Specify: 194.204.152.34 and 194.204.159.1, deselect UDP, deselect TLS
 ----------
 System -> Settings
-Change time zone
+Change time zone to yours
+Setup device as local NTP server - disable
+Idle timeout - 30 minutes
+
 ----------
 System -> Firmware
 https://docs.fortinet.com/upgrade-tool/fortigate
@@ -23,3 +26,4 @@ Backup config and upgrade
 ----------
 Policy&Objects -> Firewall Policy
 Turn on Logs in Implicit Deny
+
